@@ -247,15 +247,15 @@
 </style>
 
 <script>
-    // AFRAME.registerComponent('markerhandler', {
-    //     init: function () {
-    //         let marker = this.el;
-    //         this.el.sceneEl.addEventListener('markerFound', () => {
-    //             let loader = document.getElementsByClassName('arjs-loader')[0];
-    //             loader.style.display = 'none';
-    //         })
-    //     }
-    // });
+    AFRAME.registerComponent('markerhandler', {
+        init: function () {
+            let marker = this.el;
+            this.el.sceneEl.addEventListener('markerFound', () => {
+                let loader = document.getElementsByClassName('arjs-loader')[0];
+                loader.style.display = 'none';
+            })
+        }
+    });
 </script>
 
 <body>
